@@ -7,10 +7,10 @@ org 100h
 
         MOV DL, 25
 
-        MOV byte[200h], 8
-        MOV byte[201h], 10
-        MOV byte[202h], 12
-        MOV byte[203h], 14
+        MOV byte[200h], 10
+        MOV byte[201h], 12
+        MOV byte[202h], 14
+        MOV byte[203h], 16
 
         call modotexto
 
