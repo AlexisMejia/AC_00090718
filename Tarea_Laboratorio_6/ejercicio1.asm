@@ -51,17 +51,20 @@ org 100h
                 je banderaC
                 jne banderaF
 
+        ;comparacion entre cadenas 
         banderaC:
                 cmp SI, 4
                 je mensajeC
                 inc SI
                 jmp for
         
+        ;mensaje de clave erronea
         banderaF:
                 mov DX, msg3
                 call EscribirCadena
                 jmp exit
 
+        ;mensaje de clave exitosa
         mensajeC:
                 MOV DX, msg2
                 call EscribirCadena
